@@ -125,7 +125,8 @@ button:hover {
   text-align: center;
   font-size: 1.5rem;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
   padding: 10px;
   transition: 0.6s;
   background-image: linear-gradient(var(--primary-light),var(--background));
