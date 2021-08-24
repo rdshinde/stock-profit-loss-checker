@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stockecker</title>
+  </head>
+  <body >
+    <header id="overlay">
+      <h1>Stockecker</h1>
+    </header>
+    <main >
+      <h2>Enter the data to check the stock position.</h2>
+      <section class="data-field">
+        <div class="data">
+          
+          <input type="number" id="quantities" placeholder="Enter Share Quantities." />
+        </div>
+        <div class="data">
+          
+          <input type="number" id="initial-price" placeholder="Enter Initial Price." />
+        </div>
+        <div class="data">
+          
+          <input type="number" id="current-price" placeholder="Enter Current Price" />
+        </div>
+        <div class="data hidden" id="name">
+          <input type="text" id="stock-name" placeholder="Enter stock name ex. SBIN, INFY" />
+        </div>
+        <div id="from-api">
+            <small id="api">Not Sure of Current Price Click Here.</small>
+        </div>
+        <div id="calculate">
+            <button>
+                Check Profit or Loss
+            </button>
+        </div>
+      </section>
+      <section class="result-field" >
+          <div id="result">  </div>
+          
+      </section>
+    </main>
+    <!-- Footer Starts Here -->
+    <footer class="footer">
+        <a href="#">Rishikesh Shinde</a><br />
+        <!-- Social Media Icons  -->
+        <span class="social-media">
+          <a href="https://github.com/rdshinde" target="_blank" name="Rishikesh Shinde Github Profile">
+            <img
+              style="display: inline; margin: 0 5px"
+              src="/assets/github.svg"
+              alt="github-link"
+              height="50px"
+              width="50"
+            />
+          </a>
+          <a name="Rishikesh Shinde Linkedin Profile"
+            href="https://www.linkedin.com/in/rishikesh-shinde-1211b5192"
+            target="_blank"
+          >
+            <img
+              style="display: inline; margin: 0 5px"
+              src="/assets/linkedin.svg"
+              alt="linkedin-link"
+              height="50px"
+              width="50"
+          /></a>
+        </span>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #1687a7;
+  --secondary: #276678;
+  --primary-light: #d3e0ea;
+  --primary-dark: #03506f;
+  --background: #f4f9f9;
+  --width-break: 800px;
+}
+
+body {
+  font-family: "Calistoga", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--background);
+}
+a {
+  text-decoration: none;
+}
+header {
+  text-align: center;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  padding: 1rem;
+  font-size: 3rem;
+  background-color: var(--primary-dark);
+  color: #fff;
+}
+header h1 {
+  font-family: "Calistoga", cursive;
+  text-align: center;
+  cursor: pointer;
+}
+main {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  /* background-color: var(--primary-dark); */
+  background-image: linear-gradient(to bottom, var(--primary-dark),var(--primary-light));
+  color: white;
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.data-field {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+input {
+  border: none;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 25rem;
+  color: var(--primary-dark);
+  outline: none;
+  justify-content: center;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button {
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 25rem;
+  margin-top: 1.5rem;
+  transition: 0.6s;
+}
+button:hover {
+  color: white;
+  background-color: var(--primary-dark);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  transition: 0.6s;
+}
+.result-field {
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.result-field > div {
+  font-size: 2rem;
+  color: white;
+}
+#from-api{
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.7s;
+}
+#from-api:hover{
+  padding: 1rem;
+  transition: 0.6s;
+  color:var(--primary-dark);
+  background-color: var(--background);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+/* footer */
+.footer{
+  
+  text-align: center;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 10px;
+  transition: 0.6s;
+  background-image: linear-gradient(var(--primary-light),var(--background));
+  
+}
+.footer>a{
+  color: var(--primary-dark);
+  
+}
