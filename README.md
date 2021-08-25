@@ -12,7 +12,7 @@ and you will get this:
 
 ![](assets/stockname.png)
 
-Now just enter the name of your stock for example, if you want the current price of `State Bank Of India stock` then type `SBIN` and you will get the last closing price in current price input box.
+Now just enter the name of your stock for example, if you want the current price of `State Bank Of India` stock then type `SBIN` and you will get the last closing price in current price input box.
 
 > ### What about API?
 
