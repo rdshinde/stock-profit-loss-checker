@@ -26,7 +26,7 @@ function calculateProfitOrLoss() {
   const buyingPrice = parseFloat(initialPrice.value);
   const currPrice = parseFloat(currentPrice.value);
   const quantity = parseInt(quantities.value);
-// calculating price difference in current price and initial price 
+  // calculating price difference in current price and initial price
   const priceDiff = currPrice - buyingPrice;
   // handling empty input
   if (buyingPrice && currPrice && quantity) {
@@ -36,25 +36,23 @@ function calculateProfitOrLoss() {
       const profitPercentage = Math.trunc((priceDiff / buyingPrice) * 100);
       result.innerText = `Wow! you are in profit with ${profitPercentage}% that is ${profit} rupees.`;
       result.style.color = "green";
+    }
     //   for loss calculation
-    } else if (priceDiff < 0) {
+    else if (priceDiff < 0) {
       const loss = (priceDiff * quantity).toFixed(2);
       const lossPercentage = Math.trunc((priceDiff / buyingPrice) * 100);
       result.innerText = `Sorry! you are in loss with ${lossPercentage}% that is ${loss} rupees.`;
       result.style.color = "#ff0e0e";
+    }
     //   for no loss, no profit
-    } else {
+    else {
       result.innerText = `No Gain, No Pain`;
       result.style.color = "#03506f";
     }
-  } 
-  else {
-    if (buyingPrice == 0 || currPrice == 0 || quantity == 0) {
-      alert("This cannot be zero. Please enter correct value.");
-    }
+  } else {
+    alert("These values cannot be zero. Please enter correct value.");
   }
 }
-
 
 // for getting currentPrice trough API
 function getData() {
@@ -76,6 +74,6 @@ function getData() {
     },
   });
 }
-
+// Adding event listerners for api and calculation respectively
 stockName.addEventListener("input", getData);
 calculate.addEventListener("click", calculateProfitOrLoss);
