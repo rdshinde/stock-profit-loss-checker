@@ -46,7 +46,11 @@ main {
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   /* background-color: var(--primary-dark); */
-  background-image: linear-gradient(to bottom, var(--primary-dark),var(--primary-light));
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-dark),
+    var(--primary-light)
+  );
   color: white;
   position: relative;
 }
@@ -106,22 +110,21 @@ button:hover {
   font-size: 2rem;
   color: white;
 }
-#from-api{
+#from-api {
   cursor: pointer;
   font-size: 1.2rem;
   transition: 0.7s;
 }
-#from-api:hover{
+#from-api:hover {
   padding: 1rem;
   transition: 0.6s;
-  color:var(--primary-dark);
+  color: var(--primary-dark);
   background-color: var(--background);
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 /* footer */
-.footer{
-  
+.footer {
   text-align: center;
   font-size: 1.5rem;
   margin: auto;
@@ -129,10 +132,8 @@ button:hover {
   border-radius: 1rem;
   padding: 10px;
   transition: 0.6s;
-  background-image: linear-gradient(var(--primary-light),var(--background));
-  
+  background-image: linear-gradient(var(--primary-light), var(--background));
 }
-.footer>a{
+.footer > a {
   color: var(--primary-dark);
-  
 }
