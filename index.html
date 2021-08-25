@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <link rel="shortcut icon" href="/assets/graph.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <title>Stockecker</title>
   </head>
@@ -13,6 +13,7 @@
     <header id="overlay">
       <h1>Stockecker</h1>
     </header>
+    <!-- Main Content -->
     <main>
       <h2>Enter the data to check your stock position.</h2>
       <section class="data-field">
@@ -37,6 +38,7 @@
             placeholder="Enter Current Price"
           />
         </div>
+        <!-- For API  -->
         <div class="data hidden" id="name">
           <input
             type="text"
@@ -47,6 +49,7 @@
         <div id="from-api">
           <small id="api">Not Sure of Current Price Click Here.</small>
         </div>
+        <!-- Check button -->
         <div id="calculate">
           <button>Check Profit or Loss</button>
         </div>
