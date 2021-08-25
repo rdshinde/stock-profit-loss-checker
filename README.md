@@ -6,15 +6,15 @@ This app checks position of your stock. You just have to give share quantities a
 >
 > In case you don't know current price of your stock just click here
 
- ![](assets/clickhere.png)
+![](assets/clickhere.png)
 
- and you will get this:
+and you will get this:
 
- ![](assets/stockname.png)
+![](assets/stockname.png)
 
 Now just enter the name of your stock for example, if you want the current price of `State Bank Of India stock` then type `SBIN` and you will get the last closing price in current price input box.
 
->### What about API?
+> ### What about API?
 
 The serverURL of API is:
 
@@ -22,7 +22,7 @@ The serverURL of API is:
         stockName +
         ".BSE&outputsize=full&apikey=demo
 
->### What else you would like to tell about this app?
+> ### What else you would like to tell about this app?
 
 Here are some things about this app that i would like to share:
 
@@ -32,6 +32,12 @@ Here are some things about this app that i would like to share:
 
 2. Tech Stack Used is `HTML`, `CSS`, `Javascript`.
 
->### Where do I can ckeckout all of this?
+> ### Where do I can ckeckout all of this?
 
-To visit the app just click [here]()
+To visit the app just click [here](https://stockecker.netlify.app/) .
+
+Or you can go here: https://stockecker.netlify.app .
+
+I hope your stocks are in profit. 😉
+
+Enjoy!
