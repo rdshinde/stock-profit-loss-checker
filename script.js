@@ -75,5 +75,5 @@ function getData() {
   });
 }
 // Adding event listerners for api and calculation respectively
-stockName.addEventListener("change", getData);
+stockName.addEventListener("input", getData);
 calculate.addEventListener("click", calculateProfitOrLoss);
