@@ -51,7 +51,7 @@ function calculateProfitOrLoss() {
     }
   } else {
     alert(
-      "These values cannot be zero or negative. Please enter correct value."
+      "These values cannot be zero or negative. Please enter correct values."
     );
   }
 }
