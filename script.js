@@ -29,7 +29,7 @@ function calculateProfitOrLoss() {
   // calculating price difference in current price and initial price
   const priceDiff = currPrice - buyingPrice;
   // handling empty input
-  if (buyingPrice && currPrice && quantity) {
+  if (buyingPrice>0 && currPrice>0 && quantity>0) {
     // for profit calculation
     if (priceDiff > 0) {
       const profit = (priceDiff * quantity).toFixed(2);
