@@ -4,6 +4,7 @@ const initialPrice = document.querySelector("#initial-price");
 const currentPrice = document.querySelector("#current-price");
 const stockName = document.querySelector("#stock-name");
 const result = document.querySelector("#result");
+const getCurrentPrice = document.querySelector('#get-current-price');
 
 const forAPIData = document.querySelector("#name");
 const forAPI = document.querySelector("#from-api");
@@ -14,11 +15,13 @@ const overlay = document.querySelector("#overlay");
 forAPI.addEventListener("click", function () {
   forAPIData.classList.remove("hidden"); //using classlist property
   forAPI.classList.add("hidden");
+  currentPrice.disabled = true;
 });
 // event listener for overlay
 overlay.addEventListener("click", function () {
   forAPIData.classList.add("hidden");
   forAPI.classList.remove("hidden");
+  currentPrice.disabled = false;
 });
 
 // Calculating profit or loss
@@ -77,5 +80,5 @@ function getData() {
   });
 }
 // Adding event listerners for api and calculation respectively
-stockName.addEventListener("input", getData);
-calculate.addEventListener("click", calculateProfitOrLoss);
+setTimeout(getCurrentPrice.addEventListener("click", getData),100);
+setTimeout(calculate.addEventListener("click", calculateProfitOrLoss),1000);

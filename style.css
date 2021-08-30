@@ -85,6 +85,14 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Get Current Price Button */
+#get-current-price{
+  width: 200px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: -1rem;
+}
 /* for calculate button */
 button {
   border: none;
