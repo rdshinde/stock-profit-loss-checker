@@ -62,7 +62,11 @@ function calculateProfitOrLoss() {
 // for getting currentPrice trough API
 function getData() {
   stock = stockName.value.toUpperCase();
-  var url =
+  if(stock===""){
+    alert("Please enter the stock name.")
+  }
+  else{
+    var url =
     "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=" +
     stock +
     ".BSE&outputsize=full&apikey=K8TU2ND7L5Z688IB";
@@ -78,6 +82,8 @@ function getData() {
         data["Time Series (Daily)"][lastRefreshed]["4. close"];
     },
   });
+  }
+  
 }
 // Adding event listerners for api and calculation respectively
 setTimeout(getCurrentPrice.addEventListener("click", getData),100);
