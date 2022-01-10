@@ -12,20 +12,20 @@ const calculate = document.querySelector("#calculate");
 const overlay = document.querySelector("#overlay");
 
 // event listener for stock name appearance
-forAPI.addEventListener("click", function () {
+forAPI.addEventListener("click",  ()=> {
   forAPIData.classList.remove("hidden"); //using classlist property
   forAPI.classList.add("hidden");
   currentPrice.disabled = true;
 });
 // event listener for overlay
-overlay.addEventListener("click", function () {
+overlay.addEventListener("click", ()=> {
   forAPIData.classList.add("hidden");
   forAPI.classList.remove("hidden");
   currentPrice.disabled = false;
 });
 
 // Calculating profit or loss
-function calculateProfitOrLoss() {
+const calculateProfitOrLoss = ()=> {
   const buyingPrice = parseFloat(initialPrice.value);
   const currPrice = parseFloat(currentPrice.value);
   const quantity = parseInt(quantities.value);
@@ -60,13 +60,13 @@ function calculateProfitOrLoss() {
 }
 
 // for getting currentPrice trough API
-function getData() {
+const getData = ()=> {
   stock = stockName.value.toUpperCase();
   if(stock===""){
     alert("Please enter the stock name.")
   }
   else{
-    var url =
+    let url =
     "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=" +
     stock +
     ".BSE&outputsize=full&apikey=K8TU2ND7L5Z688IB";
